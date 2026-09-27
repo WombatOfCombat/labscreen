@@ -1,0 +1,14 @@
+[Unit]
+Description=Part of the labscreen addon. Sends RAM and CPU loads and IP address over serial port 9600 to a connected arduino device using a .sh script.
+After=multi-user.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/lcd-stats.sh
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
