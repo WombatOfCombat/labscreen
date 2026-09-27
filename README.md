@@ -26,7 +26,7 @@ arduino-cli lib install "LiquidCrystal I2C"
 ```
 
 ## Physical setup
-![wire setup](wire_diagram.png)
+![wire setup](wiring_diagram.png)
 
 1. Attach the wires to your Arduino board and LCD1602 according to the diagram above.
 2. Connect your Arduino board to your Linux device using the data-capable USB cable.
